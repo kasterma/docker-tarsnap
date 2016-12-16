@@ -18,7 +18,8 @@ backup:
 	docker run \
 	-v /usr/local/tarsnap-cache:/tarsnap-cache \
 	-v /Users/kasterma/tarsnap.key:/tarsnap.key:ro \
-	-v /Users/kasterma/Dropbox/:/docker:ro \
+	-v /Users/kasterma/Dropbox/:/dropbox:ro \
 	-v /Users/kasterma/Documents/:/documents:ro \
 	-v /Users/kasterma/org/:/org:ro \
+	-v /Users/kasterma/notes/:/notes:ro \
 	--rm kasterma/tarsnap
